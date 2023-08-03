@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="topbar d-flex">
+                <div class="col contact-icon">
+                    <i class="bi bi-envelope"> <a href="mailto:contact@example.com"
+                            class="contact">contact@example.com</a> </i>
+                    <i class="bi bi-phone"> <span> +1 5589 55488 55</span></i>
+                </div>
+                <div class="d-none d-md-inline-flex topbar-icons">
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </div>
+
+            <nav class="navbar sticky-top" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand col" href="#">Impact.</a>
+
+                    <div>
+                        <ul class="nav justify-content-lg-end d-none d-lg-flex navbar-icons">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Drop Down</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapse d-lg-none" id="navbarToggleExternalContent">
+                        <ul class="nav justify-content-end d-inline-block nav-sm col-5 vh-100 navbar-icons">
+                            <!-- <li class="nav-item d-flex flex-row-reverse">
+                                <button class="d-lg-none nav-x-btn p-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                  
+                                    <i class="bi bi-x-lg collapse" style="color: #fff;"
+                                        id="navbarToggleExternalContent"></i>
+                                </button>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Drop Down</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-md-grow-0 d-flex">
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+
+                            <i class="bi bi-list show" id="navbarToggleExternalContent"></i>
+                            <i class="bi bi-x-lg collapse" id="navbarToggleExternalContent"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <head>
+                <div class="d-flex flex-nowrap ">
+                    <div class="order-3 p-2 ">First flex item</div>
+                    <div class="order-2 p-2 ">Second flex item</div>
+                    <div class="order-1 p-2 ">Third flex item</div>
+                </div>
+                <div class="d-flex flex-column flex-md-row m-5">
+                    <div class="order-2 mt-5 px-4">
+                        <h1>Welcome to Impact</h1>
+                        <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae
+                            cumque
+                            eum
+                            quaerat.</p>
+                        <div class="d-flex p-2 get-started justify-content-lg-start justify-content-center">
+                            <a class="btn-get-started" href="#getStared">Get
+                                Started</a>
+                            <a href="#" class="btn-watch-video d-flex align-items-center px-4">
+                                <i class="bi bi-play-circle"></i><span class="ps-2">Watch Video</span></a>
+                        </div>
+                    </div>
+                    <div class="order-md-3">
+                        <img src="../img/hero-img.svg" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- <div class="row feature-icons text-center">
+                        <div class="col-lg-3 col-sm-6 feature-card p-5">
+                            <i class="bi bi-easel" style="width: 100px;"></i>
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 feature-card p-5">
+                            <i class="bi bi-gem"></i>
+                            <h2>sit amet consectetur</h2>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 feature-card p-5">
+                            <i class="bi bi-geo-alt"></i>
+                            <h2>Dolorem culpa</h2>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 feature-card p-5">
+                            <i class="bi bi-command"></i>
+                            <h2>voluptate libero</h2>
+                        </div>
+                    </div> -->
+                    <!-- flex-lg-row -->
+                    <!-- d-flex flex-column justify-content-center flex-lg-row  -->
+
+                    <div class="feature-icons row gy-4 mt-5 justify-content-evenly">
+                        <div class="feature-card col-md-5 col-xl-3 p-5">
+                            <i class="bi bi-easel"></i>
+                            <h2>Lorem ipsum</h2>
+                        </div>
+                        <div class=" feature-card col-md-5 col-xl-3 p-5">
+                            <i class="bi bi-gem"></i>
+                            <h2>sit amet consectetur</h2>
+                        </div>
+                        <div class="feature-card col-md-5 col-xl-3 p-5">
+                            <i class="bi bi-geo-alt"></i>
+                            <h2>Dolorem culpa</h2>
+                        </div>
+                        <div class="feature-card col-md-5 col-xl-3 p-5">
+                            <i class="bi bi-command"></i>
+                            <h2>voluptate libero</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </head>
+
+        </header>
+
+        <main>
+            <section>
+
+            </section>
+        </main>
+        <footer>fef</footer>
+    </div>
+    <div class="overlay collapse d-lg-none" id="navbarToggleExternalContent"></div>
+
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
