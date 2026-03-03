@@ -7,7 +7,21 @@ body {
     background-color: #37517e;
     color: #fff;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
 
+#holiMessage {
+    font-size: 5em;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out; /* Smooth color transition */
+}
 .main-container {
     background-color: #fff;
     color: black;
@@ -905,4 +919,5 @@ label.label input[type="file"] {
 
 .label:valid+span {
     color: #fff;
+
 }
