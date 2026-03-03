@@ -13,7 +13,22 @@ new PureCounter({
     currency: false,
     separator: false,
 });
+// A simple array of colors for Holi
+const colors = ['#ff6347', '#4682b4', '#32cd32', '#ff1493', '#ffa500', '#9370db'];
 
+// Function to change the color of the message
+function changeColor() {
+    const messageElement = document.getElementById('holiMessage');
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    messageElement.style.color = randomColor;
+}
+
+// Initial color change and an event listener for user interaction
+document.addEventListener('DOMContentLoaded', (event) => {
+    changeColor(); // Set an initial color
+    const messageElement = document.getElementById('holiMessage');
+    messageElement.addEventListener('click', changeColor); // Change color on click
+});
 const btnScrollTo = document.querySelector('.back-to-top');
 const section1 = document.querySelector('#top');
 //scrolling
@@ -49,3 +64,4 @@ function calling() {
     let file = document.getElementById('uploadPicture').files[0];
     console.log(file.name);
 }
+
